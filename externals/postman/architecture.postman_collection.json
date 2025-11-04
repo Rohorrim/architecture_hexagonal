@@ -1,0 +1,916 @@
+{
+	"info": {
+		"_postman_id": "3b4fd9fd-20e1-44cd-8475-de157a515426",
+		"name": "IMT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "Clients",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetOne",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "bc670dc2-e32b-4a32-b9f1-6b1b9d27815c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastname\": \"Dupont\",\r\n    \"firstname\": \"David\",\r\n    \"genre\": \"HOMME\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstname\": \"David2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "89004357-3d29-4a04-9cec-864a649336a8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "c352de12-1aaf-4044-918d-a13fce0553d4"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comptes",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient/comptes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient",
+										"comptes"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "dbd16b13-b0d0-47a2-b020-c9960686bdb3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetOne",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient/comptes/:idCompte",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient",
+										"comptes",
+										":idCompte"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "0b7a99df-754a-4161-9426-fc900ef3fe57"
+										},
+										{
+											"key": "idCompte",
+											"value": "1b1e00a7-fff0-40fb-9a77-181b2fd3219e"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Compte courant d'Emmanuel\",\r\n    \"type\": \"COMPTE_COURANT\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient/comptes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient",
+										"comptes"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "dbd16b13-b0d0-47a2-b020-c9960686bdb3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Livret A d'Emmanuel\",\r\n    \"type\": \"LIVRET_A\",\r\n    \"solde\": 100.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient/comptes/:idCompte",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient",
+										"comptes",
+										":idCompte"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "dbd16b13-b0d0-47a2-b020-c9960686bdb3"
+										},
+										{
+											"key": "idCompte",
+											"value": "9c0f47f5-1532-4492-b7b0-7bdaa799bbbd"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/imt/v1/clients/:idClient/comptes/:idCompte",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"imt",
+										"v1",
+										"clients",
+										":idClient",
+										"comptes",
+										":idCompte"
+									],
+									"variable": [
+										{
+											"key": "idClient",
+											"value": "0b7a99df-754a-4161-9426-fc900ef3fe57"
+										},
+										{
+											"key": "idCompte",
+											"value": "1b1e00a7-fff0-40fb-9a77-181b2fd3219e"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MCP",
+			"item": [
+				{
+					"name": "Tools List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 13,\r\n  \"method\": \"tools/list\",\r\n  \"params\": {\r\n    \"arguments\": {}\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 13,\r\n  \"method\": \"tools/list\",\r\n  \"params\": {\r\n    \"arguments\": {}\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:19:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 13,\n    \"result\": [\n        {\n            \"name\": \"GetAllClients\",\n            \"description\": \"Permet de récupérer tous les clients\",\n            \"inputSchema\": {\n                \"type\": \"object\"\n            }\n        },\n        {\n            \"name\": \"GetOneClient\",\n            \"description\": \"Permet de récupérer les informations d'un client en particulier\",\n            \"inputSchema\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"identifier\": {\n                        \"description\": \"Client identifier\",\n                        \"example\": \"550e8400-e29b-41d4-a716-446655440000\",\n                        \"type\": \"string\",\n                        \"format\": \"uuid\"\n                    }\n                },\n                \"required\": [\n                    \"identifier\"\n                ]\n            }\n        },\n        {\n            \"name\": \"GetOneCompte\",\n            \"description\": \"Permet de récupérer les informations d'un compte en particulier pour un client donné\",\n            \"inputSchema\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"clientIdentifier\": {\n                        \"description\": \"Identifiant du client propriétaire du compte\",\n                        \"example\": \"550e8400-e29b-41d4-a716-446655440000\",\n                        \"type\": \"string\",\n                        \"format\": \"uuid\"\n                    },\n                    \"identifier\": {\n                        \"description\": \"Identifiant du compte à récupérer\",\n                        \"example\": \"660f9511-f30c-52e5-b827-557766551111\",\n                        \"type\": \"string\",\n                        \"format\": \"uuid\"\n                    }\n                },\n                \"required\": [\n                    \"clientIdentifier\",\n                    \"identifier\"\n                ]\n            }\n        },\n        {\n            \"name\": \"GetAllComptes\",\n            \"description\": \"Permet de récupérer tous les comptes d'un client\",\n            \"inputSchema\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"clientIdentifier\": {\n                        \"description\": \"Identifiant du client propriétaire des comptes\",\n                        \"example\": \"550e8400-e29b-41d4-a716-446655440000\",\n                        \"type\": \"string\",\n                        \"format\": \"uuid\"\n                    }\n                },\n                \"required\": [\n                    \"clientIdentifier\"\n                ]\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Tools Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 14,\r\n  \"method\": \"tools/call\",\r\n  \"params\": {\r\n    \"name\": \"GetAllClients\",\r\n    \"arguments\": {}\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 14,\r\n  \"method\": \"tools/call\",\r\n  \"params\": {\r\n    \"name\": \"GetAllClients\",\r\n    \"arguments\": {}\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Resources List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 6,\r\n  \"method\": \"resources/list\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 6,\r\n  \"method\": \"resources/list\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:21:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 6,\n    \"result\": [\n        {\n            \"uri\": \"reference://genres\",\n            \"name\": \"Genres disponibles pour un client\",\n            \"description\": \"Liste des genres valides à utiliser lors de la création ou modification d'un client\",\n            \"mimeType\": \"application/json\"\n        },\n        {\n            \"uri\": \"reference://types-compte\",\n            \"name\": \"Types de compte bancaire disponibles\",\n            \"description\": \"Liste des types de compte valides à utiliser lors de la création ou modification d'un compte bancaire\",\n            \"mimeType\": \"application/json\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Resources Read",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 7,\r\n  \"method\": \"resources/read\",\r\n  \"params\": {\r\n    \"uri\": \"reference://types-compte\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple - Type Compte",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 7,\r\n  \"method\": \"resources/read\",\r\n  \"params\": {\r\n    \"uri\": \"reference://types-compte\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:22:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 7,\n    \"result\": {\n        \"uri\": \"reference://types-compte\",\n        \"mimeType\": \"application/json\",\n        \"text\": \"[\\n  { \\\"value\\\": \\\"COMPTE_COURANT\\\", \\\"description\\\": \\\"Compte courant classique\\\" },\\n  { \\\"value\\\": \\\"LIVRET_A\\\",       \\\"description\\\": \\\"Livret d'épargne A\\\" },\\n  { \\\"value\\\": \\\"LDDS\\\",           \\\"description\\\": \\\"Livret de développement durable et solidaire\\\" }\\n]\\n\"\n    }\n}"
+						},
+						{
+							"name": "Exemple - Genre",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 8,\r\n  \"method\": \"resources/read\",\r\n  \"params\": {\r\n    \"uri\": \"reference://genres\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:23:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 8,\n    \"result\": {\n        \"uri\": \"reference://genres\",\n        \"mimeType\": \"application/json\",\n        \"text\": \"[\\n  { \\\"value\\\": \\\"HOMME\\\",           \\\"description\\\": \\\"Genre masculin\\\" },\\n  { \\\"value\\\": \\\"FEMME\\\",           \\\"description\\\": \\\"Genre féminin\\\" },\\n  { \\\"value\\\": \\\"NON_COMMUNIQUER\\\", \\\"description\\\": \\\"Genre non communiqué par choix\\\" }\\n]\\n\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Prompts List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 6,\r\n  \"method\": \"resources/list\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 9,\r\n  \"method\": \"prompts/list\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:24:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 9,\n    \"result\": [\n        {\n            \"name\": \"analyse-client\",\n            \"description\": \"Génère un workflow guidé pour analyser la situation financière complète d'un client : récupération des données, analyse des comptes, détection des soldes négatifs et recommandations\",\n            \"arguments\": [\n                {\n                    \"name\": \"clientIdentifier\",\n                    \"description\": \"Identifiant UUID du client dont on veut analyser la situation financière\",\n                    \"required\": true\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Prompts Get",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 10,\r\n  \"method\": \"prompts/get\",\r\n  \"params\": {\r\n    \"name\": \"analyse-client\",\r\n    \"arguments\": {\r\n      \"clientIdentifier\": \"550e8400-e29b-41d4-a716-446655440000\"\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/imt/v1/mcp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imt",
+								"v1",
+								"mcp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Exemple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"id\": 10,\r\n  \"method\": \"prompts/get\",\r\n  \"params\": {\r\n    \"name\": \"analyse-client\",\r\n    \"arguments\": {\r\n      \"clientIdentifier\": \"550e8400-e29b-41d4-a716-446655440000\"\r\n    }\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/imt/v1/mcp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"imt",
+										"v1",
+										"mcp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2026 22:25:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 10,\n    \"result\": {\n        \"name\": \"analyse-client\",\n        \"messages\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"Tu es un conseiller bancaire expert. Ta mission est d'analyser la situation financière du client identifié par l'UUID : 550e8400-e29b-41d4-a716-446655440000\\n\\nSuis les étapes suivantes dans l'ordre :\\n\\nÉtape 1 — Récupération du profil client\\nAppelle l'outil GetOneClient avec l'argument : identifier = 550e8400-e29b-41d4-a716-446655440000\\nNote l'identité du client (nom, prénom, genre).\\n\\nÉtape 2 — Récupération des comptes\\nAppelle l'outil GetAllComptes avec l'argument : clientIdentifier = 550e8400-e29b-41d4-a716-446655440000\\nListe tous les comptes disponibles avec leur type et leur solde.\\n\\nÉtape 3 — Analyse financière\\nPour chaque compte :\\n- Identifie le type (COMPTE_COURANT, LIVRET_A, LDDS)\\n- Note le solde\\n- Signale les comptes avec un solde strictement négatif (risque de frais d'agios)\\n\\nÉtape 4 — Rapport structuré\\nProduis un rapport avec :\\n- Identité complète du client\\n- Nombre total de comptes et répartition par type\\n- Solde total consolidé (somme de tous les soldes)\\n- Liste des comptes en débit (solde < 0) avec le montant du dépassement\\n- Recommandations : régularisation des comptes en débit, diversification des épargnes si aucun LIVRET_A ou LDDS\\n\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
